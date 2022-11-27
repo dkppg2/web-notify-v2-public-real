@@ -12,14 +12,14 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID", "8813038"))
-API_HASH = os.environ.get("API_HASH", "780fd96b159baa710dada78ff1621b54")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5443507219:AAHJeqjaKB38jMMRsklsLYxvYbAYKfKf5e4")
-OWNER_ID = int(os.environ.get("OWNER_ID", "2083503061"))
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://abcd:abcd@cluster0.cii4jll.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "WebNotificationBot")
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001363692085"))
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "Web_notify_bot")
+API_ID = int(os.environ.get("API_ID", "18274091"))
+API_HASH = os.environ.get("API_HASH", "97afe4ab12cb99dab4bed25f768f5bbc")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5664706056:AAF1JNlMEeIX2rCVlgkOQa8EnLU_Qn5uZEs")
+OWNER_ID = int(os.environ.get("OWNER_ID", "5457695358"))
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://abcd:abcd@cluster0.ruawekg.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "Notification")
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001637919182"))
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Notify_Rbot")
 BROADCAST_AS_COPY = os.environ.get("BROADCAST_AS_COPY", True)
 VALIDITY = [int(i.strip()) for i in os.environ.get("VALIDITY").split(",")] if os.environ.get("VALIDITY") else [999999999,]
 #languages = os.environ.get("TRANSLATION_LANG").replace(r'\n', '\n').split("\n") 
