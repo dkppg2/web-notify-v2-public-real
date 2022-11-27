@@ -1,0 +1,55 @@
+{
+    "name": "Notifier_Bot",
+    "stack": "container",
+    "keywords": [
+        "telegram",
+        "Notifier_Bot"
+    ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        }
+        ,
+        "OWNER_ID": {
+            "description": "ID of the owner",
+            "value": ""
+        }
+        ,
+        "LOG_CHANNEL": {
+            "description": "ID of the log channel",
+            "value": ""
+        }
+        ,
+        "DATABASE_URL": {
+            "description": "Mongodb database URL",
+            "value": ""
+        }
+        ,
+        "DATABASE_NAME": {
+            "description": "Name of ur database",
+            "value": "WebNotificationBot",
+            "required":false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
