@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 class Script(object):
     START_MESSAGE = os.environ.get("START_MESSAGE", "**Hii 👋\n\n I Am a Notification Bot  Made By @CR_0O0 \n Which Can Helps To Give New released Serials Link With in 1 second \n Avilable OTTs \n [Hotstar](https://hotstar.com) ❤️‍🔥 \n [zee5](https://zee5.com) 💞 \n [voot](https://www.voot.com) 💕 \n Buy Subscription From @CR_0O0**")
     HELP_MESSAGE = os.environ.get("HELP_MESSAGE", "**You Really Need Help ?🤔\n\n  Its a Zee5 / Voot / Hotstar Fastest Link provider Bot \nFirst You Need To Get access From @CR_0O0 Then You Can Use This Bot**")
-    ABOUT_MESSAGE = os.environ.get("ABOUT_MESSAGE", "**Hey Bro I Am NotificationBot \n\n i Can Give Notifications of New Episodes { ZEE5 VOOT HOTSTAR } \n\n My Father : [_Rᴏʟᴇx_](https://telegram.me/CR_0O0)\n Official Partner = [Shivaay](Https://telegram.me/yourshivay)**")
+    ABOUT_MESSAGE = os.environ.get("ABOUT_MESSAGE", "**Hey Bro I Am NotificationBot \n\n i Can Give Notifications of New Episodes { ZEE5 VOOT HOTSTAR } \n\n My Father : [_Rᴏʟᴇx_](https://telegram.me/CR_0O0)\n **")
 
     ADD_ADMIN_TEXT = """Current Admins:
 {}
