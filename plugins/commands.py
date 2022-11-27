@@ -19,7 +19,7 @@ async def start(bot: Client, cmd: Message):
     text = await translate(Script.START_MESSAGE, to_language=user['lang'])
     return await txt.edit(text, reply_markup=Script.HELP_REPLY_MARKUP, disable_web_page_preview=True)
 
-@Client.on_message(filters.command("help") & filters.private)
+@Client.on_message(filters.command("plans") & filters.private)
 async def help(bot: Client, cmd):
     txt = await cmd.reply("`Processing...`")
     user = await get_user(cmd.from_user.id)
