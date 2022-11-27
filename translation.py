@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 class Script(object):
     START_MESSAGE = os.environ.get("START_MESSAGE", "**Hii 👋\n\n I Am a Notification Bot  Made By @CR_0O0 \n Which Can Helps To Give New released Serials Link With in a second \n Avilable OTTs \n [Hotstar](https://hotstar.com) ❤️‍🔥 \n [zee5](https://zee5.com) 💞 \n [voot](https://www.voot.com) 💕 \n Buy Subscription From @CR_0O0**")
-    HELP_MESSAGE = os.environ.get("HELP_MESSAGE", "**Do You Want me to help you 🫠?\n\nYou Can Only Use me if you had bought the My Subscription. \n\nIf You haven't bought Contact\n\n@CR_0O0 to buy\n\nIf you are my subscriber , so please wait will Provide you link as your Favourite show comes .**")
+    HELP_MESSAGE = os.environ.get("HELP_MESSAGE", "**For Plans Details Please Contact To @CR_0O0**")
     ABOUT_MESSAGE = os.environ.get("ABOUT_MESSAGE", "**About Me 🤖\n\nBOT NAME  🦾   : [Notification Robot 🔔](https://telegram.me/Notify_Rbot)\n\nDEVELOPER 🧠 : [_Rᴏʟᴇx_](https://telegram.me/CR_0O0)\n\nMADE BY 🫀 : PYTHON \n\nOWNED BY  🗣 :  [_Rᴏʟᴇx_](https://telegram.me/CR_0O0)\n\nHAVE A NICE DAY Bro ❤️**")
 
     ADD_ADMIN_TEXT = """Current Admins:
@@ -58,7 +58,7 @@ Banned: {banned_status}
 
     HELP_REPLY_MARKUP = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton('Help', callback_data=f'help_command'),
+            InlineKeyboardButton('plans', callback_data=f'help_command'),
             InlineKeyboardButton('Language', callback_data=f'lang_command'),
 
         ],
