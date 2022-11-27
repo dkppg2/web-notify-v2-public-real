@@ -196,7 +196,7 @@ async def lang_cmd_handler(bot, m: Message):
 async def info_cmd_handler(bot, m: Message):
     if len(m.command) == 1 and m.from_user.id in temp.ADMINS_LIST:
         return await m.reply_text("`/myplan id`")
-    user_id = m.command[1] if m.from_user.id in temp.ADMINS_LIST else m.from_user.id
+    user_id = int(m.command[1]) if m.from_user.id in temp.ADMINS_LIST else m.from_user.id
     
     btn = await get_user_info_button(user_id)
     text = await get_user_info_text(user_id)
