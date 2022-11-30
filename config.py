@@ -15,7 +15,7 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID", "18274091"))
 API_HASH = os.environ.get("API_HASH", "97afe4ab12cb99dab4bed25f768f5bbc")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5664706056:AAF1JNlMEeIX2rCVlgkOQa8EnLU_Qn5uZEs")
-OWNER_ID = int(os.environ.get("OWNER_ID", "5457695358"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "2109516065"))
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://abcd:abcd@cluster0.ruawekg.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Notification")
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001637919182"))
