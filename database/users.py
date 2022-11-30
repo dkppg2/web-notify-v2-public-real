@@ -61,7 +61,7 @@ async def is_user_exist(id):
 async def is_user_verified(user_id):
     user = await get_user(user_id)
     access_days = datetime.fromtimestamp(time.mktime(user["last_verified"].timetuple()) + user['access_days'])
-    return (access_days - datetime.now()).seconds >= 0
+    return (access_days - datetime.now()).total_seconds() >= 0
 
 async def expiry_date(user_id):
     user = await get_user(user_id)
