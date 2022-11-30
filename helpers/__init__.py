@@ -72,7 +72,7 @@ Allowed Languages: `{allowed_languages}`
         subscription_date=subscription_date, 
         expiry_date=expiry_date_str, 
         time_remaining=human_time(time_remaining) if type(time_remaining) is int else time_remaining , 
-        allowed_languages=" ".join(user["allowed_languages"]),
+        allowed_languages=" ".join(user["allowed_languages"]) if user["allowed_languages"] else None, 
         banned_status=user["banned"]
         )
 
