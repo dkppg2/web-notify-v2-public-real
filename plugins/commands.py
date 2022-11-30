@@ -200,6 +200,8 @@ async def info_cmd_handler(bot, m: Message):
     
     btn = await get_user_info_button(user_id)
     text = await get_user_info_text(user_id)
+    print(text)
+    print(btn)
     await m.reply(text, reply_markup=InlineKeyboardMarkup(btn) if m.from_user.id in temp.ADMINS_LIST else None)
 
 @Client.on_message(filters.command('premium_users') & filters.private)
