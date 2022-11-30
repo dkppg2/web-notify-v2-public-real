@@ -21,7 +21,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "Notification")
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001637919182"))
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Notify_Rbot")
 BROADCAST_AS_COPY = os.environ.get("BROADCAST_AS_COPY", True)
-VALIDITY = [int(i.strip()) for i in os.environ.get("VALIDITY").split(",")] if os.environ.get("VALIDITY") else [3600,86400,432000,604800,1209600,2419200,2592000,5270400,7776000,31536000,63115200,94672800,315576000,631152000,1577880000]
+VALIDITY = [int(i.strip()) for i in os.environ.get("VALIDITY").split(",")] if os.environ.get("VALIDITY") else [3600,86400,432000,604800,1209600,2419200,2627424,5254848,7776000,31536000,63115200,94672800,315576000,631152000,1577880000]
 #languages = os.environ.get("TRANSLATION_LANG").replace(r'\n', '\n').split("\n") 
 #English, en \n Tamil, ta
 
